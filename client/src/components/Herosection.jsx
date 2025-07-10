@@ -7,7 +7,7 @@ const Herosection = () => {
     bg-cover bg-center h-screen'>
       <img src={assets.marvelLogo} alt ="" className="max-h-11 lg:h-11 mt-20"/>
 
-      <h1> Guardians <br /> of the Galaxy</h1>
+      <h1 classname=' text-5x1 md:text-[70px] md:leading-18 font-semibold max-w-110'> Guardians <br /> of the Galaxy</h1>
     </div>
   )
 }

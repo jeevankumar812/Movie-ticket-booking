@@ -1,8 +1,11 @@
 import React from 'react';
 import { assets } from '../assets/assets';
 import { ArrowRight, Calendar, Clock } from 'lucide-react'; 
+import { useNavigate } from 'react-router-dom';
 
 const Herosection = () => {
+
+  const navigate=useNavigate()
   return (
     <div className='flex flex-col items-start justify-center gap-4
       px-6 md:px-16 lg:px-36 bg-[url("/backgroundImage.png")]
@@ -26,14 +29,17 @@ const Herosection = () => {
         </div>
       </div>
 
-      <p className='max-w-md text-gray-300'>In a Post-apocalyptic world, a group of survivors must band together 
-        to fight against a ruthless warlord and his army of mutants. 
-        As they navigate through the dangers of this new world, they discover the true meaning of friendship, loyalty, and sacrifice.</p>
+      <p className='max-w-md text-gray-300'>In a post-apocalyptic world, survivors unite to battle
+         a brutal warlord and his mutant army, discovering the true meaning of loyalty, friendship, and sacrifice along the way.</p>
 
-      <button className='px-4 py-1 sm:px-7 sm:py-2 bg-cyan-500 hover:bg-cyan-400 text-white font-medium rounded-full cursor-pointer transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-cyan-400/60'>
-        Explore Movies
-        <ArrowRight className='w-5 h-5'/>
-      </button>
+      <button
+  onClick={() => navigate('/movies')}
+  className='px-4 py-1 sm:px-7 sm:py-2 bg-cyan-500 hover:bg-cyan-400 text-white font-medium rounded-full cursor-pointer 
+  transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-cyan-400/60 flex items-center gap-2'
+>
+  Explore Movies <ArrowRight className='w-5 h-5' />
+</button>
+
     </div>
 
   );

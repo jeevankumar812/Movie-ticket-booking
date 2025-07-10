@@ -1,6 +1,6 @@
 import React from 'react';
 import { assets } from '../assets/assets';
-import { Calendar, Clock } from 'lucide-react'; 
+import { ArrowRight, Calendar, Clock } from 'lucide-react'; 
 
 const Herosection = () => {
   return (
@@ -26,7 +26,14 @@ const Herosection = () => {
         </div>
       </div>
 
-      
+      <p className='max-w-md text-gray-300'>In a Post-apocalyptic world, a group of survivors must band together 
+        to fight against a ruthless warlord and his army of mutants. 
+        As they navigate through the dangers of this new world, they discover the true meaning of friendship, loyalty, and sacrifice.</p>
+
+      <button className=''>
+        Explore Movies
+        <ArrowRight className='w-5 h-5'/>
+      </button>
     </div>
 
   );

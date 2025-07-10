@@ -4,6 +4,8 @@ import googlePlay from './googlePlay.svg'
 import appStore from './appStore.svg'
 import screenImage from './screenImage.svg'
 import profile from './profile.png'
+import bg from '/bg.jpg'
+
 
 
 export const assets = {
@@ -12,7 +14,8 @@ export const assets = {
     googlePlay,
     appStore,
     screenImage,
-    profile
+    profile,
+    bg
 }
 
 export const dummyTrailers = [

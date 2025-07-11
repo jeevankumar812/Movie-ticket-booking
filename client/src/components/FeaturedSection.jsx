@@ -21,7 +21,11 @@ const FeaturedSection = () => {
       <div></div>
 
       <div className='flex justify-center mt-20'>
-        <button>Show More</button>
+        <button onClick={()=>{navigate('/movies'); scrollTo(0,0)}}
+        className='px-4 py-1 sm:px-7 sm:py-2 bg-cyan-500 hover:bg-cyan-400 text-white font-medium 
+             rounded-md cursor-pointer transition-all duration-300 transform hover:scale-105 
+             shadow-md hover:shadow-cyan-400/60 flex items-center gap-2'>
+          Show More</button>
       </div>
 
     </div>

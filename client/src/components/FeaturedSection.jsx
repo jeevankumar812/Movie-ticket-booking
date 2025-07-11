@@ -16,10 +16,14 @@ const FeaturedSection = () => {
             View All
             <ArrowRight className="w-4.5 h-4.5 transition group-hover:translate-x-0.5" />
         </button>
-
       </div>
+
       <div></div>
-      <div></div>
+
+      <div className='flex justify-center mt-20'>
+        <button>Show More</button>
+      </div>
+
     </div>
   )
 }

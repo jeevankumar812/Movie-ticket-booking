@@ -19,8 +19,8 @@ const MovieCard = ({movie}) => {
       </p>
 
       <div className='flex items-center justify-between mt-4 pb-3'>
-        <button onClick={()=>{navigate(`/movies/${movie._id}`); scrollTo(0,0)}} className='px-4 py-1 sm:px-7 sm:py-2 bg-cyan-500 hover:bg-cyan-400 text-white font-medium rounded-full cursor-pointer 
-  transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-cyan-400/60 flex items-center gap-2'>Buy Tickets</button>
+        <button onClick={()=>{navigate(`/movies/${movie._id}`); scrollTo(0,0)}} className='px-2 py-0.5 sm:px-4 sm:py-1 text-sm bg-cyan-500 hover:bg-cyan-400 text-white font-medium 
+        rounded-full cursor-pointer transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-cyan-400/60 flex items-center gap-1.5'>Buy Tickets</button>
         <p className='flex items-center gap-1 text-sm text-gray-400 mt-1 pr-1'>
             <StarIcon className="w-4 h-4 text-primary fill-primary"/>
             {movie.vote_average.toFixed(1)} 
